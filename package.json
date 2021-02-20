@@ -15,9 +15,10 @@
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
-			{
-				"command": "mariusextension.helloWorld",
-				"title": "Hello World"
+			{ 
+	
+				"command": "copy.discord",
+            	"title": "Copy: Discord"
 			}
 		]
 	},

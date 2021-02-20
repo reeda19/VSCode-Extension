@@ -9,6 +9,7 @@ const vscode = require('vscode');
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
+	
 
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
@@ -25,7 +26,15 @@ function activate(context) {
 	});
 
 	context.subscriptions.push(disposable);
+
+	let copy_discord = vscode.commands.registerCommand('copy.discord', () => {
+		vscode.window.showInformationMessage('Copy!');
+	});
+
+	context.subscriptions.push(copy_discord);
+
 }
+
 
 // this method is called when your extension is deactivated
 function deactivate() {}
